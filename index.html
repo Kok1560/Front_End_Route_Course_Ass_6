@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 6</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-color">
+
+    <header>
+        <nav class="navbar md:navbar-expand bg-1 p-0 bg-white shadow-sm">
+            <div class="container-fluid px-7 py-5 max-w-7xl">
+
+                <div class="navbar-brand d-flex align-items-center space-x-4">
+                    <div class="avatar avatar-lg main-bg-color shadow-xl"><i class="fa-solid fa-utensils fg-white"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-lg m-0 fw-bold">What's For Dinner</h1>
+                        <p class="fs-sm m-0 fg-secondary fw-normal">Your daily meal inspiration</p>
+                    </div>
+                </div>
+
+                <button class="btn-icon navbar-toggler bg-transparent" type="button" data-bs-toggle="drawer"
+                    data-bs-target="#navbarDrawer" aria-controls="navbarDrawer" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="icon fa-solid fa-bars fs-xl fg-secondary"></i>
+                </button>
+                <dialog class="drawer drawer-top d-flex justify-content-between h-fit" tabindex="-1" id="navbarDrawer"
+                    aria-labelledby="navbarDrawerLabel">
+                    <div class="drawer-header">
+                        <h5 class="drawer-title" id="navbarDrawerLabel">Menu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
+                    </div>
+                    <div class="drawer-body mb-2 md:mb-0">
+                        <ul
+                            class="nav navbar-nav d-flex ms-0 md:ms-auto flex-column md:flex-row align-items-start md:align-items-center space-y-4 md:space-x-3 md:space-y-0">
+                            <li class="nav-item space-x-3">
+                                <i class="icon fa-solid fa-bookmark fs-lg fg-secondary"></i>
+                                <span class="md:d-none">Saved Recipes</span>
+                            </li>
+                            <li class="nav-item space-x-3">
+                                <i class="icon fa-solid fa-clock-rotate-left fs-lg fg-secondary"></i>
+                                <span class="md:d-none">Recent</span>
+                            </li>
+                            <li class="nav-item space-x-3">
+                                <i class="icon fa-solid fa-gear fs-lg fg-secondary"></i>
+                                <span class="md:d-none">Settings</span>
+                            </li>
+                            <li class="nav-item space-x-3 d-flex align-items-center">
+                                <img class="icon avatar border border-2 border-main-color"
+                                    src="images/Profile_image.jpg" alt="Profile Image">
+                                <span class="md:d-none">Profile</span>
+                            </li>
+                        </ul>
+                    </div>
+                </dialog>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="meal" class="meal p-12">
+            <div class="container max-w-7xl p-0 rounded-9 overflow-hidden bg-white mx-auto">
+                <div class="row">
+                    <!-- meal image -->
+                    <div class="left-side col-12 lg:col-5">
+                        <div id="img-holder" class="img-holder h-100 position-relative">
+                            <!-- <img class="h-100 w-100" src="images/meal-1.jpg" alt="Meal Image">
+                            <div class="rating position-absolute top-0 bg-white rounded-pill px-5 py-2">
+                                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                <span class="fs-sm fw-semibold">4.7</span>
+                                <span class="fs-xs fg-secondary">(412 reviews)</span>
+                            </div>
+                            <div class="details position-absolute bottom-0 bg-white rounded-9 p-7 grid grid-cols-3 ">
+                                <div class="d-flex flex-column align-items-center">
+                                    <i class="fa-solid fa-clock fs-lg" style="color: rgb(255, 164, 0);"></i>
+                                    <p class="m-0 fs-xs fg-secondary">Prep Time</p>
+                                    <p class="m-0 fs-sm fw-bold">15 min</p>
+                                </div>
+                                <div class="d-flex flex-column align-items-center">
+                                    <i class="fa-solid fa-fire-burner fs-lg" style="color: rgb(255, 0, 0);"></i>
+                                    <p class="m-0 fs-xs fg-secondary">Cook Time</p>
+                                    <p class="m-0 fs-sm fw-bold">240 min</p>
+                                </div>
+                                <div class="d-flex flex-column align-items-center">
+                                    <i class="fa-solid fa-users fs-lg" style="color: rgb(47, 78, 237);"></i>
+                                    <p class="m-0 fs-xs fg-secondary">Servings</p>
+                                    <p class="m-0 fs-sm fw-bold">4 people</p>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+    
+                    <!-- meal details -->
+                    <div class="right-side p-6 lg:py-6 col-12 lg:col-7">
+                        <div class="d-flex justify-content-between align-items-center mb-6">
+                            <div id="name-brief">
+                                <!-- <div class="meal-type d-flex space-x-3 mb-4">
+                                    <span class="sp1 fs-xs fw-semibold rounded-pill px-4 py-1">Easy</span>
+                                    <span class="sp2 fs-xs fw-semibold rounded-pill px-4 py-1">Asian</span>
+                                </div>
+                                <h3 class="fs-2xl fw-bold">Teriyaki Chicken Bowl</h3>
+                                <p class="fs-md fg-secondary">Sweet and savory chicken over rice with vegetables</p> -->
+                            </div>
+    
+                            <div class="save-share d-flex space-x-3">
+                                <i class="icon fa-solid fa-bookmark rounded bg-info p-4 fs-lg"></i>
+                                <i class="icon fa-solid fa-share-nodes rounded bg-color p-4 fs-lg"></i>
+                            </div>
+    
+                        </div>
+    
+                        <div id="warning-div">
+                            <!-- <div id="warning-div" class="warning-div-inner p-5 d-flex align-items-center rounded-7 border-start border-5">
+                            <i class="icon fa-solid fa-triangle-exclamation me-3 fs-lg"></i>
+                            <div class="d-flex flex-column">
+                                <p class="warn-par1 m-0 fw-semibold">Extended Preparation Time</p>
+                                <p class="warn-par2 m-0">This recipe requires more than 45 minutes to prepare. Plan
+                                    accordingly!</p>
+                            </div>
+                        </div> -->
+                        </div>
+    
+    
+                        <ul class="grid grid-cols-4 justify-content-between p-5 border-bottom border-1" id="myTab"
+                            role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link position-relative active d-flex align-items-center space-x-3"
+                                    id="ingrediant-tab" data-bs-toggle="tab" data-bs-target="#ingrediant-tab-pane" type="button"
+                                    role="tab" aria-controls="ingrediant-tab-pane" aria-selected="true"><i
+                                        class="fa-solid fa-list-check"></i><span>Ingredients</span></button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link position-relative d-flex align-items-center space-x-3"
+                                    id="Instructions-tab" data-bs-toggle="tab" data-bs-target="#Instructions-tab-pane" type="button"
+                                    role="tab" aria-controls="Instructions-tab-pane" aria-selected="false"><i
+                                        class="fa-solid fa-book-open"></i><span>Instructions</span></button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link position-relative d-flex align-items-center space-x-3"
+                                    id="Nutrition-tab" data-bs-toggle="tab" data-bs-target="#Nutrition-tab-pane" type="button"
+                                    role="tab" aria-controls="Nutrition-tab-pane" aria-selected="false"><i
+                                        class="fa-solid fa-chart-pie"></i><span>Nutrition</span></button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link position-relative d-flex align-items-center space-x-3" id="chef-tab"
+                                    data-bs-toggle="tab" data-bs-target="#chef-tab-pane" type="button" role="tab"
+                                    aria-controls="chef-tab-pane" aria-selected="false"><i
+                                        class="fa-solid fa-lightbulb"></i><span>Chef's Tips</span></button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane active" id="ingrediant-tab-pane" role="tabpanel" aria-labelledby="ingrediant-tab"
+                                tabindex="0">
+                                <div class="ingrediants p-7 bg-color rounded-9 h-350px overflow-y-auto">
+                                    <ul id="ingrediants-list" class="ingrediants-list flex-column space-y-4 p-0">
+                                        <!-- <li class="d-flex space-x-3 align-items-center">
+                                            <div class="avatar avatar-xs main-bg-color fg-white fs-sm">1</div>
+                                            <span>3 large eggplants, sliced</span>
+                                        </li> -->
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="Instructions-tab-pane" role="tabpanel" aria-labelledby="-tab"
+                                tabindex="0">
+                                <div id="instructions-list" class="instructions h-350px overflow-y-auto">
+                                    <!-- <div class="instructions-list d-flex space-x-5 align-items-end mb-7">
+                                        <div
+                                            class="d-flex w-12 h-12 main-bg-color rounded-9 justify-content-center align-items-center fs-lg fw-bold fg-white">
+                                            1</div>
+                                        <p>Slice eggplants, salt them, and let sit for 30 minutes. Rinse and pat dry.</p>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="Nutrition-tab-pane" role="tabpanel" aria-labelledby="Nutrition-tab"
+                                tabindex="0">
+                                <div class="nutrition h-350px overflow-y-auto">
+                                    <div id="nutrition-list" class="nutrition-list grid grid-cols-2">
+                                        <!-- <div class="nut rounded p-5 d-flex justify-content-between">
+                                            <div class="d-flex space-x-3 align-items-center">
+                                                <div
+                                                    class="nut-1-icon w-10 h-10 rounded d-flex align-items-center justify-content-center">
+                                                    <i class="fa-solid fa-fire"></i>
+                                                </div>
+                                                <span class="sp fw-semibold">Calories</span>
+                                            </div>
+    
+                                            <span class="fw-bold fs-lg">480 kcal</span>
+                                        </div>
+    
+                                        <div class="nut rounded p-5 d-flex justify-content-between">
+                                            <div class="d-flex space-x-3 align-items-center">
+                                                <div
+                                                    class="nut-2-icon w-10 h-10 rounded d-flex align-items-center justify-content-center">
+                                                    <i class="fa-solid fa-dumbbell"></i>
+                                                </div>
+                                                <span class="sp fw-semibold">Protein</span>
+                                            </div>
+    
+                                            <span class="fw-bold fs-lg">18g</span>
+                                        </div>
+    
+                                        <div class="nut rounded p-5 d-flex justify-content-between">
+                                            <div class="d-flex space-x-3 align-items-center">
+                                                <div
+                                                    class="nut-3-icon w-10 h-10 rounded d-flex align-items-center justify-content-center">
+                                                    <i class="fa-solid fa-wheat-awn"></i>
+                                                </div>
+                                                <span class="sp fw-semibold">Carbohydrates</span>
+                                            </div>
+    
+                                            <span class="fw-bold fs-lg">58g</span>
+                                        </div>
+    
+                                        <div class="nut rounded p-5 d-flex justify-content-between">
+                                            <div class="d-flex space-x-3 align-items-center">
+                                                <div
+                                                    class="nut-4-icon w-10 h-10 rounded d-flex align-items-center justify-content-center">
+                                                    <i class="fa-solid fa-droplet"></i>
+                                                </div>
+                                                <span class="sp fw-semibold">Fat</span>
+                                            </div>
+    
+                                            <span class="fw-bold fs-lg">20g</span>
+                                        </div>
+    
+                                        <div class="nut rounded p-5 d-flex justify-content-between">
+                                            <div class="d-flex space-x-3 align-items-center">
+                                                <div
+                                                    class="nut-5-icon w-10 h-10 rounded d-flex align-items-center justify-content-center">
+                                                    <i class="fa-solid fa-seedling"></i>
+                                                </div>
+                                                <span class="sp fw-semibold">Fiber</span>
+                                            </div>
+    
+                                            <span class="fw-bold fs-lg">10g</span>
+                                        </div>
+    
+                                        <div class="nut rounded p-5 d-flex justify-content-between">
+                                            <div class="d-flex space-x-3 align-items-center">
+                                                <div
+                                                    class="nut-6-icon w-10 h-10 rounded d-flex align-items-center justify-content-center">
+                                                    <i class="fa-solid fa-cube"></i>
+                                                </div>
+                                                <span class="sp fw-semibold">Sodium</span>
+                                            </div>
+    
+                                            <span class="fw-bold fs-lg">540mg</span>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="tab-pane" id="chef-tab-pane" role="tabpanel" aria-labelledby="chef-tab"
+                                tabindex="0">
+                                <div class="chef-tips h-350px overflow-y-auto">
+                                    <div id="chef-tips-list" class="chef-tips-list d-flex flex-column gap-5">
+                                        <!-- <div
+                                            class="ingrediant p-5 d-flex align-items-center rounded-7 border-start border-5">
+                                            <i class="icon fa-solid fa-check me-3 avatar avatar-lg p-1 fs-xs fg-white"></i>
+                                            <p class="m-0">Marinate chicken overnight for deeper flavor</p>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="pt-7 mt-9 border-top">
+                            <button id="recipes-btn" class="recipes-btn btn py-4 px-7 d-flex align-items-center fg-white"><i
+                                    class="fa-solid fa-rotate"></i>Try Another Recipe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <script type="module" src="js/all.min.js"></script>
+    <script type="module" src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

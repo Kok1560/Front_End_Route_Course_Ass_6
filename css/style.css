@@ -1,0 +1,250 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    scrollbar-gutter: auto;
+    --main-color: #FD4426;
+}
+
+body{
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.main-bg-color{
+    background-color: var(--main-color);
+}
+
+.bg-color{
+    background-color: #FFFBEA;
+}
+
+.border-main-color{
+    border-color: var(--main-color);
+}
+
+.max-w-7xl{
+    max-width: 80rem;
+}
+
+.h-400px{
+    height: 400px;
+}
+
+.h-350px{
+    height: 350px;
+}
+
+.w-12{
+    width: calc(.25rem*12);
+}
+
+.h-12{
+    height: calc(.25rem*12);
+}
+
+.w-10{
+    width: calc(.25rem*10);
+}
+
+.h-10{
+    height: calc(.25rem*10);
+}
+
+
+.navbar ul li .icon{
+    transition: all .3s;
+}
+
+.navbar ul li span{
+    transition: all .3s;
+}
+
+.navbar ul li:hover .icon{
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.navbar ul li:hover span{
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+
+.navbar .navbar-toggler:hover{
+    background-color: none;
+    color: none;
+
+}
+
+.navbar button:hover .icon{
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.img-holder img {
+  object-fit: cover;
+}
+
+.meal .rating{
+    transform: translate(10%, 50%);
+}
+
+.meal .details{
+    transform: translate(0, -20%);
+    right: 5%;
+    left: 5%;
+}
+
+.meal .meal-type .sp1
+{
+    color: #00825E;
+    background-color: #DBFCE7;
+}
+
+.meal .meal-type .sp2
+{
+    color: #1447E6;
+    background-color: #DBEAFE;
+}
+
+.meal .save-share .icon
+{
+    color: #F54900;
+    background-color: #FFF6EA;
+}
+.meal .save-share .icon:hover{
+    background-color: #FFD6A7;
+    cursor: pointer;
+}
+
+.meal .warning-div-inner{
+    background-color: #FEF2F2;
+    border-color: #FB313B;
+}
+
+.meal .warning-div-inner .icon{
+    color: #FB2C36;
+}
+
+.meal .warning-div-inner .warn-par1{
+    color: #9F0712;
+}
+
+.meal .warning-div-inner .warn-par2{
+    color: #E7000B;
+}
+
+
+.meal .right-side .nav-link:hover
+{
+    color: #364153;
+}
+
+.meal .right-side .nav-link.active:hover
+{
+    color: #364153;
+}
+
+.meal .right-side .nav-link::before
+{
+    content: "";
+    position: absolute;
+    bottom: -30%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--main-color);
+}
+
+.meal .right-side .nav-link.active{
+    color: var(--main-color);
+}
+.meal .right-side .nav-link.active::before{
+    width: 100%;
+    
+}
+
+.meal .right-side .ingrediants-list{
+    list-style-type: none;
+}
+
+.meal .right-side .ingrediants{
+    scrollbar-width: thin;
+    scrollbar-color: #FEF2F2 white;
+}
+
+.meal .right-side .instructions-list{
+    list-style-type: none;
+}
+
+.meal .right-side .instructions{
+    scrollbar-width: thin;
+    scrollbar-color: #FEF2F2 white;
+}
+
+.meal .right-side .nutrition .nut{
+    background-color: #F9FAFB;
+}
+
+.meal .right-side .nutrition .nut-1-icon{
+    background-color: #FFEDD4;
+    color: #F54900;
+}
+
+.meal .right-side .nutrition .nut-2-icon{
+    background-color: #DBEAFE;
+    color: #155DFC;
+}
+
+.meal .right-side .nutrition .nut-3-icon{
+    background-color: #FEF9C2;
+    color: #D08700;
+}
+
+.meal .right-side .nutrition .nut-4-icon{
+    background-color: #FFE2E2;
+    color: #E7000B;
+}
+
+.meal .right-side .nutrition .nut-5-icon{
+    background-color: #DBFCE7;
+    color: #00A63E;
+}
+
+.meal .right-side .nutrition .nut-6-icon{
+    background-color: #FCE7F3;
+    color: #E60076;
+}
+
+.meal .right-side .nutrition .nut .sp{
+    color: #364153;
+}
+
+.meal .right-side .chef-tips-list .icon{
+    background-color: #E17100;
+}
+
+.meal .right-side .chef-tips-list .ingrediant {
+    background-color: #FFFBEB;
+    border-color: #FFB900;
+}
+
+.meal .right-side .recipes-btn{
+    background-image: linear-gradient(to right, oklch(70.5% .213 47.604), oklch(63.7% .237 25.331));
+    transition: all .3s;
+}
+
+.meal .right-side .recipes-btn:hover{
+    transform: scale(1.1);
+    background-image: linear-gradient(to right, #f54a00, #e7000b);
+}
+
+
+
+@media (min-width: 992px) {
+  .h-100 {
+    height: 100%;
+  }
+}
+
